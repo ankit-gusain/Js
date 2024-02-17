@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.body_bg {
+    background: #588fb655;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.accordion {
+    max-width: 1200px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.accordion_item {
+    border: 1px solid #668c95;
+    margin-bottom: 10px;
+}
+
+.accordion_title {
+    background-color: #2fe0d792;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion_content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion_title.active {
+    background-color: #3ab7c788;
+   
+}
+
+.accordion_title.active+.accordion_content {
+    display: block;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.accordion_title h3 {
+    margin: 0;
+}
+
+/* FontAwesome icon styling */
+.accordion_title i {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
