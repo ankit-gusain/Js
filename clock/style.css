@@ -1,3 +1,7 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: #212121;
     color: #fff;
@@ -13,8 +17,8 @@ body {
 
 #clock {
     font-size: 40px;
-    background-color: orange;
+    background-color: rgba(0, 217, 255, 0.687);
     padding: 20px 50px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
