@@ -1,0 +1,37 @@
+* {
+    color: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #db3434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b92929;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1f618d;
+    transform: scale(0.95);
+}
