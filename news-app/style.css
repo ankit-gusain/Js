@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    color: steelblue;
+    color: rgb(217, 217, 218);
 }
 
 .obj-width {
@@ -15,6 +15,7 @@
 
 body {
     position: relative;
+    background: #000;
 }
 
 .navbar {
@@ -59,7 +60,6 @@ body {
 
 }
 
-
 .blog-card {
 
     width: 270px;
@@ -68,11 +68,13 @@ body {
     padding: 1rem;
     margin: auto;
     margin-bottom: 1rem;
+    border: 1.5px solid rgb(0, 74, 66);
+    border-radius: 10px;
 }
 
 .blog-card:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.100);
-    border: 1.5px solid rgb(0, 74, 66);
+    border: 1.5px solid white;
 
 }
 
@@ -83,7 +85,6 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
 
 .blog-card h2 {
     font-size: 1.5rem;
@@ -106,7 +107,7 @@ body {
     height: 90vh;
     padding: 30px;
     margin: 30px;
-    
+
 }
 
 .banner-image-container {
@@ -118,6 +119,5 @@ body {
     width: 100%;
     height: auto;
     cursor: pointer;
-    object-fit:fill;
+    object-fit: fill;
 }
- 
