@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.811);
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+.ball1 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 5px rgb(255 0 0 / 82%);
+    position: relative;
+    top: 30px;
+    left: 330px;
+    z-index: 1;
+    animation: moveHorizontal 2s infinite alternate;
+    /* Apply the horizontal movement animation */
+}
+
+.ball2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: blue;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 255, 0.82);
+    position: relative;
+    left: 800px;
+    top: 275px;
+    z-index: 1;
+    animation: moveHorizontal 2s infinite alternate;
+    /* Apply the horizontal movement animation */
+}
+
+.card {
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    border: 2px solid grey;
+    background: transparent;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    background: #5e4b4b52;
+    z-index: 2;
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px rgb(63, 63, 63);
+}
+
+.name {
+    padding: 5px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05cm;
+}
+
+.account {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.two-button {
+    display: flex;
+}
+
+button {
+    background: transparent;
+    padding: 5px 10px;
+    margin: 10px;
+    color: gray;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 0.552);
+    border: 2px solid rgba(255, 255, 255, 0.599);
+}
+
+@keyframes moveHorizontal {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+
+#typingEffect {
+
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.see1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* Set a higher z-index to appear above other elements */
+}
+
+.see {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.see:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
