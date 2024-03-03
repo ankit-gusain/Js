@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #00f7da;
+    /* Optional: Set a background color */
+}
+
+.main {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+    /* Optional: Add margin to the header */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #1a8268;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1f6694;
+}
+
+#counter {
+    font-size: 24px;
+    margin: 0 20px;
+}
